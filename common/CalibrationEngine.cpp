@@ -338,7 +338,7 @@ void CalibrationEngine::drawDisplay() {
 	}
 	
 	// draw the horizontal lines
-	ui->setColor(0, 255, 0);
+	ui->setColor(255, 255, 255);
 	for (int i=0;i<grid_size_y;i++) {
 		float start_x = 0;
 		float start_y = i*cell_size_y;
@@ -376,7 +376,7 @@ void CalibrationEngine::drawDisplay() {
 	}
 	
 	// draw the red box for the selected point
-	ui->setColor(255, 0, 0);
+	ui->setColor(255, 0, 80);
 	GridPoint p = grid->GetInterpolated(grid_xpos,grid_ypos);
 	gx = (int)(grid_xpos*cell_size_x + p.x*cell_size_x);
 	gy = (int)(grid_ypos*cell_size_y + p.y*cell_size_y);

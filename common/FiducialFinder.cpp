@@ -193,19 +193,22 @@ void FiducialFinder::drawObject(int id, float xpos, float ypos, int state)
 	
 	switch (state) {
 		case FIDUCIAL_FOUND:
-			ui->setColor(0,255,0);
+			//ui->setColor(0,255,0);
+			// vert du point ?
+			ui->setColor(250,225,186);
 			break;
 		case FIDUCIAL_FUZZY:
-			ui->setColor(255,255,0);
+			ui->setColor(0,0,255);
 			break;
 		case FIDUCIAL_ROOT:
-			ui->setColor(255,0,0);
+			ui->setColor(51,241,255);
 			break;
 	}
 	
 	int x = (int)floor(xpos * width + 0.5f);
 	int y = (int)floor(ypos * height + 0.5f);
 	
+	// dessin de l'id
 	ui->drawText(x,y,id_str);
 	
 	ui->drawLine(x+1, y, x+2, y);
@@ -259,7 +262,8 @@ void FiducialFinder::drawGrid(unsigned char *src, unsigned char *dest) {
 	ui->drawEllipse(width/2, height/2,cell_width*2,cell_height*2);
 
 	// draw the horizontal lines
-	ui->setColor(0, 255, 0);
+	//ui->setColor(0,255,0);
+	ui->setColor(125, 0, 125);
 	for (int i=0;i<grid_size_y;i++) {
 		float start_x = 0;
 		float start_y = i*cell_height;

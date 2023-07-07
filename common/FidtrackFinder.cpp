@@ -446,7 +446,8 @@ void FidtrackFinder::decodeYamaarashi(FiducialX *yama, unsigned char *img, TuioT
 			}
 			
 #ifndef NDEBUG
-			ui->setColor(255, 0, 255);
+			//ui->setColor(255, 0, 255);
+			ui->setColor(0,0,0);
 			ui->drawLine(bx,by,px,py);
 #endif
 			
@@ -1119,7 +1120,8 @@ void FidtrackFinder::process(unsigned char *src, unsigned char *dest) {
 
 				tuioManager->updateTuioCursor((*tcur),closest_fblob->getX(),closest_fblob->getY());
 				drawObject(FINGER_ID,(*tcur)->getX(),(*tcur)->getY(),0);
-				ui->setColor(0,255,0);
+				//ui->setColor(0,255,0);
+				ui->setColor(255,255,255);
 				ui->drawEllipse(closest_fblob->getX()*width,closest_fblob->getY()*height,closest_fblob->getWidth()*width,closest_fblob->getHeight()*height,closest_fblob->getAngle());
 
 				if (send_finger_blobs) {

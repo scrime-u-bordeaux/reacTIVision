@@ -45,10 +45,11 @@ void SDLinterface::initFont()
 	}
 	font_->MaxPos = x-1;
 	
-	unsigned char pixel = fontPixel(font_->Surface, 0, font_->Surface->h-1);
+	unsigned char pixel = fontPixel(font_->Surface, 100, font_->Surface->h-1);
 	SDL_UnlockSurface(font_->Surface);
 	SDL_SetColorKey(font_->Surface, SDL_TRUE, pixel);
-	
+
+
 	font_->Texture = SDL_CreateTextureFromSurface(renderer_,font_->Surface);
 }
 
@@ -152,6 +153,7 @@ void SDLinterface::updateDisplay()
 	
 	if (select_)
 	{
+		//color for background option cam
 		SDL_SetRenderDrawColor(renderer_,0,0,0,0);
 		SDL_RenderClear(renderer_);
 		SDL_SetRenderTarget(renderer_, display_);
@@ -619,7 +621,8 @@ void SDLinterface::displayControl(const char *title, int min, int max, int value
 	drawText(x_offset+128-(textWidth(title)/2),y_offset-textHeight(),title);
 	
 	SDL_SetRenderTarget(renderer_, display_);
-	SDL_SetRenderDrawColor(renderer_,0,255,0,255);
+	//level bar
+	SDL_SetRenderDrawColor(renderer_,110, 200, 255,255);
 	
 	// draw the border
 	SDL_Rect border = {x_offset,y_offset,256,25};
