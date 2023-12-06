@@ -4,6 +4,10 @@ https://www.researchgate.net/publication/317611637_A_versatile_high-performance_
 https://discourse.vvvv.org/t/fiducial-tracking-custom-patterns/17740  
 
 
+      
+  
+tread on GobalS piCam : https://forums.raspberrypi.com/viewtopic.php?t=348642  
+
 # reacTIVision 1.6
 
 © 2005-2022 by Martin Kaltenbrunner <martin@tuio.org>
