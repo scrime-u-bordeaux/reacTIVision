@@ -1,5 +1,8 @@
 alternative soft :  
 https://github.com/LCAS/whycon/tree/snapcart  
+https://www.researchgate.net/publication/317611637_A_versatile_high-performance_visual_fiducial_marker_detection_system_with_scalable_identity_encoding/download?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ  
+https://discourse.vvvv.org/t/fiducial-tracking-custom-patterns/17740  
+
 
 # reacTIVision 1.6
 
