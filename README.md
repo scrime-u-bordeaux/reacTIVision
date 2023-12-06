@@ -1,3 +1,6 @@
+alternative soft :  
+https://github.com/LCAS/whycon/tree/snapcart  
+
 # reacTIVision 1.6
 
 © 2005-2022 by Martin Kaltenbrunner <martin@tuio.org>
