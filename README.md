@@ -8,6 +8,9 @@ https://discourse.vvvv.org/t/fiducial-tracking-custom-patterns/17740
   
 tread on GobalS piCam : https://forums.raspberrypi.com/viewtopic.php?t=348642  
 
+  Various commands for setting GS Pi camera : https://gist.github.com/Hermann-SW/e6049fe1a24fc2b5a53c654e0e9f6b9c  
+  
+
 # reacTIVision 1.6
 
 © 2005-2022 by Martin Kaltenbrunner <martin@tuio.org>
